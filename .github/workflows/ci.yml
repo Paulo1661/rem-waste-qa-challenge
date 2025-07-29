@@ -31,7 +31,7 @@ jobs:
 
       - name: Start backend
         working-directory: backend
-        run: npm run start &
+        run: npm run dev &
 
       # Install and run frontend
       - name: Install frontend dependencies
@@ -40,7 +40,7 @@ jobs:
 
       - name: Start frontend
         working-directory: frontend
-        run: npm run start &
+        run: npm run dev &
 
       # Wait for frontend and backend to be up
       - name: Wait for services to be ready
