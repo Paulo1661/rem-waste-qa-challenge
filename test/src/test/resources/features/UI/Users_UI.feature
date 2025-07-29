@@ -1,5 +1,5 @@
 @UI
-Feature: Login and User CRUD
+Feature: Login and User UI CRUD
   Functional UI Automation for User CRUD application
 
   @Login
@@ -26,7 +26,7 @@ Feature: Login and User CRUD
     Then Rachel should see the new item in the user list
 
   @EditUser
-  Scenario: Edith an existing user
+  Scenario: Edit an existing user
     Given Rachel has logged in the application
     When Rachel edits the user having email "jane@example.com" with these details
       | name  | Jane Doe           |
