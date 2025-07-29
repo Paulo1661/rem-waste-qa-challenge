@@ -46,3 +46,9 @@ export const deleteUser = (req: Request, res: Response) => {
     const deleted = users.splice(index, 1)[0];
     res.json(deleted);
 };
+
+export const deleteAllUser = (req: Request, res: Response) => {
+    console.log("removing all users")
+    users = [];
+    res.status(200).json({ message: 'DB cleaned' });
+};
