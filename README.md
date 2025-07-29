@@ -79,6 +79,7 @@ It’s ideal for acceptance testing because it helps **tell the story** of what 
 
 A pipeline is provided to run tests on every `push`.  
 The Serenity report is uploaded as an **artifact** under the Actions tab.
+Example for a previous execution : https://github.com/Paulo1661/rem-waste-qa-challenge/actions/runs/16595442576/artifacts/3638461746
 
 ---
 
