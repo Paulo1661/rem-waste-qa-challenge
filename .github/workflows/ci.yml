@@ -44,4 +44,5 @@ jobs:
 
       # Run Serenity BDD E2E tests
       - name: Run Serenity tests
+        working-directory: test
         run: mvn clean verify
