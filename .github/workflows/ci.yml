@@ -46,11 +46,15 @@ jobs:
       - name: Run Serenity tests
         working-directory: test
         run: mvn clean verify
+
+      # Generate Serenity BDD E2E html tests report
+      - name: Generate report
+        working-directory: test
+        run: mvn serenity:aggregate
         
       # Optional: Upload Serenity Report
       - name: Upload Serenity Report
         uses: actions/upload-artifact@v4
         with:
           name: serenity-report
-          run: mvn serenity:aggregate
           path: test/target/site/serenity
