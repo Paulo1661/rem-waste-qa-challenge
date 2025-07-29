@@ -35,14 +35,16 @@ cd rem-waste-qa-challenge
 # 2. Run script to install dependencies, start backend + frontend and run tests
 chmod +x start.sh
 ./start.sh &
-
-
-
-
 ```
 
 The Serenity report will be available at:  
 `test/target/site/serenity/index.html`
+
+There you also have **visual test snapshots (for UI)**. Examples bellow :
+
+![test steps](./assets/img1.png)
+![test steps](./assets/img2.png)
+
 
 ---
 
@@ -80,6 +82,9 @@ The Serenity report is uploaded as an **artifact** under the Actions tab.
 
 ---
 
+## Test Documentation LINK
+[test-documentation](https://drive.google.com/file/d/19TyHnGt6gZ94BegxyJ-LFmfjZq8rEtNC/view?usp=sharing
+)
 ## 👤 Author
 
 Paul Leufang  
