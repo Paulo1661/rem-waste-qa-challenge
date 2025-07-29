@@ -46,3 +46,10 @@ jobs:
       - name: Run Serenity tests
         working-directory: test
         run: mvn clean verify
+        
+      # Optional: Upload Serenity Report
+      - name: Upload Serenity Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: serenity-report
+          path: test/target/site/serenity
